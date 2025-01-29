@@ -1,6 +1,31 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  //define empty arrays
+  const array = [];
+  const newArray = [];
+
+  //add each letter to array, forwards and backwards
+  for (i = 0; i < word.length; i++) {
+    array.push(word[i]);
+    newArray.unshift(word[i]);
+  }
+
+  //log the arrays
+  console.log(array);
+  console.log(newArray);
+
+  //check if they're the same, and return true or false
+  if (array.toString() === newArray.toString()) {
+    return true;
+  } else {
+    return false;
+  }
+
 }
+
+//test
+// isPalindrome('mom');
 
 /* 
   Add your pseudocode here
