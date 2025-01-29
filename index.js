@@ -6,12 +6,14 @@ function isPalindrome(word) {
   Add your pseudocode here
 
   slice the parameter into an array
+  define newArray
 
   //switch order of the letters:
   (((for loop:
     i = array.length-1; i > 0; i--;
     add each letter array[i] into new array)))
-    foreach letter in array, .unshift into new array
+
+  foreach letter in array, .unshift into new array
 
   check if both arrays === each other
 
